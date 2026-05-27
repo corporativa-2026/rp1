@@ -46,14 +46,15 @@ const set1 = match.newSet(); // Inicia um novo set
 // há um set
 console.log(match.sets); // [{...}]
 console.log(match.sets.length === 1); // true
+
 // set[0] é definido e retorna um objeto set
 console.log(match.sets[0]); // {...}
+console.log(match.firstSet); // {...}
 
-console.log(match.firstSet); // [{...}]
-console.log(match.secondSet); // undefined
-console.log(match.thirdSet); // undefined
-console.log(match.fourthSet); // undefined
-console.log(match.fifthSet); // undefined
+console.log(match.secondSet); // undefined, mesmo que set[1]
+console.log(match.thirdSet); // undefined, mesmo que set[2]
+console.log(match.fourthSet); // undefined, ...
+console.log(match.fifthSet); // undefined, ...
 
 console.log(set1.scorePoint('Não me Toque') === 1); // retorna true, nro ponto para 'Não me Toque'
 console.log(set1.scorePoint('Tio Hugo') === 1); // retorna true, nro ponto para 'Tio Hugo'
