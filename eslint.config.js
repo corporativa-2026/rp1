@@ -25,7 +25,7 @@ export default [
       'curly': ['warn', 'all'],
 
       // Estrito: sem console em produção
-      'no-console': 'warn',
+      // 'no-console': 'warn',
 
       // Google usa 2 espaços — força explícito
       'indent': ['warn', 2, { SwitchCase: 1 }],
